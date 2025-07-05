@@ -10,13 +10,11 @@ interface SlideImage {
   url: string;
 }
 
-const ImageSlider: FC = () => {
-  const images: SlideImage[] = [
-    { id: 1, url: '/images/Slide1.jpg' },
-    { id: 2, url: 'https://via.placeholder.com/600x300?text=Товар+2' },
-    { id: 3, url: 'https://via.placeholder.com/600x300?text=Товар+3' },
-  ];
+interface ImageSliderProps {
+  images: SlideImage[];
+}
 
+const ImageSlider: FC<ImageSliderProps> = ({ images }) => {
   return (
     <div className="w-full max-w-4xl mx-auto mt-8">
       <Swiper
@@ -26,7 +24,7 @@ const ImageSlider: FC = () => {
         navigation
         pagination={{ clickable: true }}
         autoplay={{ delay: 5000 }}
-        loop={true}
+        loop
       >
         {images.map((image) => (
           <SwiperSlide key={image.id}>

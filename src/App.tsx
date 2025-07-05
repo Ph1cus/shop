@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom'
-import MainLayout from './layout/mainLayout'
-import HomePage from './pages/homePage'
-import CatalogPage from './pages/catalogPage'
-import AboutPage from './pages/aboutusPage'
-import ProductPage from './components/ProductPage'
+import MainLayout from './components/MainLayout'
+import HomePage from './pages/HomePage'
+import CatalogPage from './pages/CatalogPage'
+import AboutPage from './pages/AboutusPage'
+import ProductPage from './pages/ProductPage'
 
 
 function App() {

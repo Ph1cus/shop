@@ -23,8 +23,8 @@ dist/
 dist-ssr/
 *.local
 
-# Firebase files (залежать від підключення)
-.firebase/
+# Firebase 
+firebase.ts
 .firebaserc
 firebase-debug.log
 firebase-debug.*
