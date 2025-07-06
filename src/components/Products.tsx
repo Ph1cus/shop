@@ -14,7 +14,7 @@ interface ProductsProps {
 
 const Products: FC<ProductsProps> = ({ products }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 px-4 max-w-6xl mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-7 px-4 max-w-6xl mx-auto ">
       {products.map(product => (
         <Link
           to={`/product/${product.id}`}
